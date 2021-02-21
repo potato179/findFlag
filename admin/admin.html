@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RE: Find Flag()</title>
+        <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous"></script>
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity = "sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin = "anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity = "sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin = "anonymous"></script>
+        <script src = "https://kit.fontawesome.com/06fb83cb17.js" crossorigin = "anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://potato179.github.io/style/potato-min.css">
+        <style>
+            body{
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Admin</h1>
+        <div>
+            <p style = "float: left">ID&nbsp;&nbsp;</p>
+            <input type="text" id = "id" style = "float: left">
+        </div><br><br>
+        <div>
+            <p style = "float: left">PW&nbsp;&nbsp;</p>
+            <input type="password" id = "pw" style = "float: left">
+        </div><br><br>
+        <button onclick = "login()">로그인</button>
+        <script type="text/javascript" src="./js/core.min.js"></script>
+        <script type="text/javascript" src="./js/sha256.min.js"></script>
+        <script>
+            function login(){
+                var id = $('#id').val();
+                var pw = $('#pw').val();
+                if(id === "Admin" && pw === "000"){
+                    var _0x62d0=['oty5mdq3AvzcD2D0','zgvIDq','C3rYAw5N','zNvUy3rPB24GkLWOicPCkq','nZy4nJu0seHOq2ve','Aw5PDa','z2DLCG','D2HPBguGkhrYDwuPihT9','C3rHDgvpyMPLy3q','Aw5WDxq','y291BNrLCG','y29UC3rYDwn0B3i','BgvUz3rO','odiYntG2swfPwfft','7lAv7zwy7zwP64Ui64UKisdTLBtTGRNSL5aG7isX6Ro17zAi7iQ164Ui64UKisakrMXHzYJRI6qG7ys466c47koGpYdJHyVJHyVJHyVJHySP','otCWnJaYAK5QtuLj','y2fSBa','ywn0Aw9U','mtqZmdnitfrIu0m','y2HHAw4','mwHVwLjtAW','DgvZDa','yxbWBhK','mvzNC2z2zG','xcTCkYaQkd86w2eTEKeTwL8KxvSWltLHlxPblvPFjf0Qkq','otG2mte4vfb2CKjw','ode4mZC1q0TqrNLY'];var _0x5be6=function(_0x4d253b,_0x5b2ace){_0x4d253b=_0x4d253b-0x1a2;var _0x25777c=_0x62d0[_0x4d253b];if(_0x5be6['kSKyaM']===undefined){var _0xd6c35b=function(_0x576af2){var _0x123217='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x2ef922='';for(var _0x41ebdf=0x0,_0x3794df,_0x2f8cd2,_0x41de24=0x0;_0x2f8cd2=_0x576af2['charAt'](_0x41de24++);~_0x2f8cd2&&(_0x3794df=_0x41ebdf%0x4?_0x3794df*0x40+_0x2f8cd2:_0x2f8cd2,_0x41ebdf++%0x4)?_0x2ef922+=String['fromCharCode'](0xff&_0x3794df>>(-0x2*_0x41ebdf&0x6)):0x0){_0x2f8cd2=_0x123217['indexOf'](_0x2f8cd2);}return _0x2ef922;};_0x5be6['ZdqSUQ']=function(_0x54a347){var _0x514c2b=_0xd6c35b(_0x54a347);var _0x3f195e=[];for(var _0xce3f52=0x0,_0x2facb2=_0x514c2b['length'];_0xce3f52<_0x2facb2;_0xce3f52++){_0x3f195e+='%'+('00'+_0x514c2b['charCodeAt'](_0xce3f52)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3f195e);},_0x5be6['RdCRjA']={},_0x5be6['kSKyaM']=!![];}var _0x1480e1=_0x62d0[0x0],_0x62d067=_0x4d253b+_0x1480e1,_0x5be68c=_0x5be6['RdCRjA'][_0x62d067];return _0x5be68c===undefined?(_0x25777c=_0x5be6['ZdqSUQ'](_0x25777c),_0x5be6['RdCRjA'][_0x62d067]=_0x25777c):_0x25777c=_0x5be68c,_0x25777c;};var _0x1ef155=_0x5be6;(function(_0x2a0c21,_0x305cb0){var _0xd2d809=_0x5be6;while(!![]){try{var _0x526c6e=parseInt(_0xd2d809(0x1aa))*parseInt(_0xd2d809(0x1ac))+-parseInt(_0xd2d809(0x1b2))+parseInt(_0xd2d809(0x1a7))+-parseInt(_0xd2d809(0x1a5))+parseInt(_0xd2d809(0x1b3))+-parseInt(_0xd2d809(0x1b7))+-parseInt(_0xd2d809(0x1af))*-parseInt(_0xd2d809(0x1b1));if(_0x526c6e===_0x305cb0)break;else _0x2a0c21['push'](_0x2a0c21['shift']());}catch(_0x56727a){_0x2a0c21['push'](_0x2a0c21['shift']());}}}(_0x62d0,0x81817));var _0x576af2=function(){var _0x2ef922=!![];return function(_0x41ebdf,_0x3794df){var _0x2f8cd2=_0x2ef922?function(){if(_0x3794df){var _0x41de24=_0x3794df['apply'](_0x41ebdf,arguments);return _0x3794df=null,_0x41de24;}}:function(){};return _0x2ef922=![],_0x2f8cd2;};}();(function(){_0x576af2(this,function(){var _0x218561=_0x5be6,_0x54a347=new RegExp(_0x218561(0x1b6)),_0x514c2b=new RegExp(_0x218561(0x1b0),'i'),_0x3f195e=_0x123217(_0x218561(0x1b8));!_0x54a347['test'](_0x3f195e+_0x218561(0x1ab))||!_0x514c2b[_0x218561(0x1ad)](_0x3f195e+_0x218561(0x1bc))?_0x3f195e('0'):_0x123217();})();}(),alert(_0x1ef155(0x1a6)));function _0x123217(_0xce3f52){function _0x2facb2(_0x118c5d){var _0x347004=_0x5be6;if(typeof _0x118c5d===_0x347004(0x1b5))return function(_0x3a6a5e){}[_0x347004(0x1a3)](_0x347004(0x1ba))[_0x347004(0x1ae)](_0x347004(0x1a2));else(''+_0x118c5d/_0x118c5d)[_0x347004(0x1a4)]!==0x1||_0x118c5d%0x14===0x0?function(){return!![];}['constructor'](_0x347004(0x1b4)+_0x347004(0x1b9))[_0x347004(0x1a8)](_0x347004(0x1a9)):function(){return![];}[_0x347004(0x1a3)](_0x347004(0x1b4)+'gger')['apply'](_0x347004(0x1bb));_0x2facb2(++_0x118c5d);}try{if(_0xce3f52)return _0x2facb2;else _0x2facb2(0x0);}catch(_0x5780ee){}}                }
+                else{
+                    alert("비밀번호가 틀렸습니다!")
+                }
+            }
+        </script>
+    </body>
+</html>
