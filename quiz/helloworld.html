@@ -71,8 +71,10 @@
         <script type="text/javascript" src="./js/sha256.min.js"></script>
         <script>
             function submit(){
-                var shaPw = CryptoJS.SHA256($('#answer').val()).toString(); 
-                console.log(shaPw);
+                var answer = CryptoJS.SHA256($('#answer').val()).toString(); 
+                console.log(answer);
+                if(answer === "2ff6e643cb70655555e2b64a67ab300d5b93fa23edae500dd7c9cee03619edec") location.href = "./pages/success.html"
+                else location.href = "./pages/fail.html"
             }
         </script>
     </body>
